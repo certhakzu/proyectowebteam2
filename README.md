@@ -1,1 +1,1 @@
-# Proyecto Web Team 2
+# Proyecto Web TEAM 2
