@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buscar</title>
+</head>
+<body>
+    
+    <h1 style="text-align:center;">Buscando un hotel en Bucaramanga</h1>
+
+        <!--En el diseño de las interfases al seleccionar el botón filtrar, volvería a la página buscar
+        esto sería temporal mientras se diseña la base de datos para direccionar a la lista de hoteles según
+        los filtros ingresados y posteriormente realizar la reserva-->
+        <!--Como se deben guardar las búsquedas realizadas, el método de llenado del formulario es con GET
+        y no POST-->
+    
+        
+    <div style="display: flex; padding: 20px">
+        <div style="width:40%;">
+            <form action="buscar.html" method="GET">
+                <fieldset>
+                    <legend><h2>Filtros de hotel</h2></legend>
+                    
+                    <h4>Disponibilidad de alojamientos</h4>            
+                    <label for="fechaingreso">Fecha de ingreso:</label>            
+                    <input type="date" name="fechaingreso" id="fechaingreso">
+                    <label for="fechasalida"> Fecha de salida:</label>
+                    <input type="date" name="fechasalida" id="fechasalida">
+                    <h3>Precio</h3>
+                    <label for="precio">Precio:</label>
+                    <select name="precio" id="precio">Precios disponibles
+                        <option value="">Todos los precios</option>
+                        <option value="200000"> menos de 200.000</option>
+                        <option value="400000">201.000 - 400.000</option>
+                        <option value="600000">401.000 - 600.000</option>
+                        <option value="2000000">más de 600.000</option>
+                    </select>
+        
+                <!--Este filtro puede ser con radio boton o con la lista desplegable, igual que piscina y parqueadero-->
+                    <h3>Aceptan mascotas</h3>
+                    <input type="radio" name="petFriendly" id="petFriendly" value="S">Si<br>
+                    <input type="radio" name="petFriendly" id="petFriendly" value="N">No
+        
+           
+                    <h3>Servicio de piscina</h3>     
+                    <input type="radio" name="piscina" id="piscina" value="S">Si<br>            
+                    <input type="radio" name="piscina" id="piscina" value="N">No
+        
+        
+                    <h3>Parqueadero</h3>
+                    <input type="radio" name="parqueadero" id="parqueadero" value="S">Si<br>
+                    <input type="radio" name="parqueadero" id="parqueadero" value="N">No
+        
+                    <h3>Tipo de Alojamiento</h3>
+                    <select name="tipoAlojamiento" id="tipoAlojamiento">Tipo de Alojamiento
+                        <option value="">Todos los alojamientos</option>
+                        <option value="hotel">Hotel</option>
+                        <option value="hostal">Hostal</option>
+                        <option value="completo">Alojamiento Completo</option>
+                    </select>
+        
+                    <h3>Infraestructura Inclusiva</h3>
+                    <select name="infraInclusiva" id="infraInclusiva">Tipo de Alojamiento
+                        <option value="">Indiferente</option>
+                        <option value="braile">Braile</option>
+                        <option value="señas">Personal capacitado en lengua de señas</option>
+                        <option value="accesibleSillasdeRuedas">Rampas de acceso y/o ascensores</option>
+                    </select>
+        
+                    <h3>Tipo de Habitación</h3>
+                    <select name="tipoHabitacion" id="tipoHabitacion">Tipo de Alojamiento
+                        <option value="">Indiferente</option>
+                        <option value="sencilla">Sencilla</option>
+                        <option value="doble">Doble</option>
+                        <option value="acomodacionMultiple">Acomodación Múltiple</option>
+                    </select>
+        
+                    <h3>Calificación</h3>
+                    <select name="infraInclusiva" id="infraInclusiva">Tipo de Alojamiento
+                        <option value="">Indifente</option>
+                        <option value="1">1 Estrella</option>
+                        <option value="2">2 Estrellas</option>
+                        <option value="3">3 Estrellas</option>
+                        <option value="4">4 Estrellas</option>
+                        <option value="5">5 Estrellas</option>                
+                    </select>
+                    <br><br><br>
+                    <input type="submit" value="Filtrar">
+                </fieldset>        
+            </form>
+            
+            <fieldset style="width: 40%;">
+                <legend><h2>Sitios Turisticos Recomendados</h2></legend>
+                <nav>        
+                    <h4>Barichara - Santander</h4>
+                    <img src="../recursos/imagenes/sitiosTuristicos/Barichara.jpg" height="300" width="450" alt="Cargar imagen"><br>
+                    <address>
+                        <a href="https://travelgrafia.co/blog/barichara-santander/">¿Cómo llegar a Barichara?</a>
+                    </address>
+            
+                    <h4>Panachi</h4>
+                    <img src="../recursos/imagenes/sitiosTuristicos/parque-nacional-del-chicamocha-p.jpg" height="300" width="450" alt="Cargar imagen"><br>
+                    <address>
+                        <a href="https://weekendsantander.com/blog/parque-nacional-del-chicamocha-panachi-santander">¿Cómo llegar a Panachi?</a>
+                    </address>
+            
+                    <h4>Cascadas de Juan Curí</h4>
+                    <img src="../recursos/imagenes/sitiosTuristicos/cascadasJuanCuri1.jpg" height="300" width="450" alt="Cargar imagen"><br>
+                    <address>
+                        <a href="https://travelerhostel.com/blog/como-llegar-cascadas-juan-curi">¿Cómo llegar a las Cascadas de Juan Curí?</a>
+                    </address>
+            
+                    <h4>Las Gachas - Guadalupe</h4>
+                    <img src="../recursos/imagenes/sitiosTuristicos/LasGachas.jpg" height="300" width="450" alt="Cargar imagen"><br>
+                    <address>
+                        <a href="https://chipviajero.com/como-llegar-a-las-gachas-de-guadalupe/">¿Cómo llegar a Las Gachas - Guadalupe?</a>
+                    </address>                
+                </nav>  
+            </fieldset>
+        </div>        
+
+        <div style="width:50%;">
+
+            <img src="../recursos/imagenes/otrasImagenes/proximamente.jpg" alt="imagen pagina en construccion" align="center" width="800" height="1200">
+        </div>
+    </div>
+    
+    <br><br>
+    <section align="center">
+        <footer>
+            <h3>______________________________</h3>
+            <address>
+                <a href="../index.html">Inicio</a>
+            </address>
+            <address>
+                <a href="../contacto/contacto.html">Contacto</a><br><br>
+            </address>
+        </footer>
+    </section>
+
+</body>
+</html>
