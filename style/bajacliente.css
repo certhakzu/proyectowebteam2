@@ -1,0 +1,448 @@
+:root{
+    --titulo: #4a5868;
+    --enlace: #a4c0e1;
+    --hover-enlace: #384751;
+    --boton-hover: #002f87ea;
+    --button-login: #0070ba;
+    --button-text: #ffff;
+}
+  
+html {
+    font-size: 62.5%;     
+}
+  
+body{ 
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;  
+}
+  
+header {
+    width: 100%;
+    height: 8.5rem;
+    display: grid;
+    grid-template-columns: 60% 40%; 
+}
+  
+a{
+    display: inline; 
+    text-decoration: none;
+    font-size: 170%;  
+    color: var(--titulo);
+    padding: 2%; 
+}
+  
+a:hover{
+    color: var(--hover);
+    cursor: pointer;
+}
+  
+  
+.header-links-container {
+    margin-top: 3rem;
+    margin-left: 1rem;
+    text-align: center;
+}
+  
+.header-buttons-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 85%;
+    height: 5rem;
+    text-align: right;
+    margin-top: 1.5rem;  
+}
+  
+#login {
+    width: 80%;
+    height: 88%;
+    font-size: 1.4rem;
+    letter-spacing: 0.06em;     
+    background-color: var(--button-login);
+    color: var(--button-text);
+    border-radius: 0.5rem;   
+    border: none;  
+    box-shadow: 3px 3px 3px var(--titulo);  
+}
+  
+#register {
+    width: 80%;
+    height: 85%;
+    font-size: 1.5rem; 
+    letter-spacing: 0.03rem;  
+    border: none;
+    background-color:var(--button-text);
+    color: var(--button-login);  
+    box-shadow: 3px 3px 3px var(--titulo); 
+    border-radius: 0.5rem;   
+    margin-top: 0.5rem;
+}
+  
+#login:hover, #register:hover {
+    background-color: var(--boton-hover);  
+    color: var(--button-text); 
+}
+  
+  
+main {
+    width: 100%;
+    height: 37rem;
+    margin-top: 6rem;
+}
+
+.text-box {
+    text-align: center;
+    width: 90%;
+    height: 58%;    
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#button-text-box {
+    width: 7rem;
+    height: 3rem;
+    border-radius: 1rem;    
+    margin-top: 0.1rem;
+    font-size: 1.4rem;
+    background-color: var(--button-text);
+    color: var(--boton-hover);
+    box-shadow: 3px 3px 3px var(--titulo);    
+}    
+#button-text-box:hover {
+    background-color: var(--boton-hover);  
+    color: var(--button-text); 
+}
+
+main span {    
+    color: var(--title-ant-color);
+    font-family:'Courier New', Courier, monospace ;  
+    font-size: 1.5rem;  
+    letter-spacing: 0.08rem;   
+    text-shadow: 0.05rem 0.05rem var(--hover-enlace);    
+    margin-left: 4rem;
+   
+    
+    
+}
+
+#text-box {
+    width: 70%;
+    height: 10rem;    
+    color: var(--title-ant-color);
+    font-family:'Courier New', Courier, monospace ;  
+    font-size: 1rem; 
+    margin-top: 0.5rem;
+}
+
+.confirm-delete fieldset {
+    width: 90%;
+    border: none;
+    text-align: center;
+    color: var(--title-ant-color);
+    font-family:'Courier New', Courier, monospace ;  
+    font-size: 1.2rem; 
+}
+
+#boton-confirmar {
+    width: 10rem;    
+    height: 3rem;
+    border-radius: 1rem;    
+    margin-top: 1rem;
+    font-size: 1.6rem;    
+    background-color: var(--button-text);
+    color: var(--boton-hover);
+    box-shadow: 3px 3px 3px var(--titulo);
+    margin-left: 15rem;
+}
+
+#boton-confirmar:hover {
+    background-color: var(--boton-hover);  
+    color: var(--button-text); 
+  }
+
+footer {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-top: 15rem; 
+  }
+  
+  footer span {   
+    color: var(--titulo);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;  
+    text-shadow: 0.05rem 0.05rem var(--hover-enlace);
+}
+
+@media (min-width: 600px) {
+
+    a{
+        font-size: 200%;  
+        padding: 4%; 
+    }
+      
+    a:hover{
+        color: var(--hover);
+        cursor: pointer;
+    }
+      
+      
+    .header-links-container {
+        margin-top: 4rem;
+
+    }
+      
+    .header-buttons-container {
+        width: 85%;
+        height: 8rem;
+        margin-top: 3rem;  
+    }
+      
+    #login {
+        width: 80%;
+        height: 80%;
+        font-size: 2rem;
+        letter-spacing: 0.04em; 
+    }
+      
+    #register {
+        width: 80%;
+        height: 80%;
+        font-size: 2.2rem; 
+        letter-spacing: 0.05rem;        
+        margin-top: 0.6rem;
+    }
+      
+    #login:hover, #register:hover {
+        background-color: var(--boton-hover);  
+        color: var(--button-text); 
+    }
+      
+    main {
+        width: 100%;
+        height: 45rem;
+        margin-top: 12rem;
+    }
+    
+    .text-box {
+        text-align: center;
+        width: 90%;
+        height: 58%;    
+        margin-top: 5rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #button-text-box {
+        width: 8rem;
+        height: 4rem;
+        border-radius: 1rem;    
+        margin-top: 0.5rem;
+        font-size: 2rem;
+        
+    
+    }    
+    #button-text-box:hover {
+        background-color: var(--boton-hover);  
+        color: var(--button-text); 
+    }
+    
+    main span {    
+        color: var(--title-ant-color);
+        font-family:'Courier New', Courier, monospace ;  
+        font-size: 2rem;  
+        letter-spacing: 0.1rem;   
+        text-shadow: 0.05rem 0.05rem var(--hover-enlace);    
+        margin-left: 10rem;        
+    }
+    
+    #text-box {
+        width: 70%;
+        height: 10rem;    
+        color: var(--title-ant-color);
+        font-family:'Courier New', Courier, monospace ;  
+        font-size: 1.5rem; 
+        margin-top: 0.5rem;
+    }
+    
+    .confirm-delete fieldset {
+        width: 95%;
+        border: none;
+        text-align: center;
+        color: var(--title-ant-color);
+        font-family:'Courier New', Courier, monospace ;  
+        font-size: 1.7rem; 
+    }
+    
+    #boton-confirmar {
+        width: 11rem;    
+        height: 4.5rem;
+        border-radius: 1rem;    
+        margin-top: 2rem;
+        font-size: 2rem;
+        margin-left: 32rem;
+    }
+    
+    #boton-confirmar:hover {
+        background-color: var(--boton-hover);  
+        color: var(--button-text); 
+      }
+    
+    footer {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        margin-top: 28rem; 
+      }
+      
+      footer span {   
+        color: var(--titulo);
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.5rem;  
+        text-shadow: 0.05rem 0.05rem var(--hover-enlace);
+    }
+}
+
+
+@media (min-width: 800px) {    
+    body {
+        position:relative ;
+        box-sizing: border-box;
+        width: 100rem;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    a{
+        font-size: 250%;  
+        padding: 6%; 
+    }
+      
+    a:hover{
+        color: var(--hover);
+        cursor: pointer;
+    }
+          
+    .header-links-container {
+        margin-top: 6rem;
+    }
+      
+    .header-buttons-container {
+        width: 90%;
+        height: 10rem;
+        margin-top: 3rem;  
+    }
+      
+    #login {
+        width: 70%;
+        height: 80%;
+        font-size: 2.5rem;
+        letter-spacing: 0.04em; 
+    }
+      
+    #register {
+        width: 70%;
+        height: 80%;
+        font-size: 2.5rem; 
+        letter-spacing: 0.05rem;        
+        margin-top: 0.6rem;
+    }
+      
+    #login:hover, #register:hover {
+        background-color: var(--boton-hover);  
+        color: var(--button-text); 
+    }
+      
+    main {
+        width: 100%;
+        height: 35rem;
+        margin-top: 18rem;
+    }
+    
+    .text-box {
+        text-align: center;
+        width: 100%;
+        height: 100%;    
+        margin-top: 5rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #button-text-box {
+        width: 10rem;
+        height: 6rem;
+        border-radius: 1rem;    
+        margin-top: 2rem;
+        font-size: 2.7rem;
+        
+    
+    }    
+    #button-text-box:hover {
+        background-color: var(--boton-hover);  
+        color: var(--button-text); 
+    }
+    
+    main span {    
+        color: var(--title-ant-color);
+        font-family:'Courier New', Courier, monospace ;  
+        font-size: 2.8rem;  
+        letter-spacing: 0.3rem;   
+        text-shadow: 0.05rem 0.05rem var(--hover-enlace);    
+        margin-left: 10rem;        
+    }
+    
+    #text-box {
+        width: 80%;
+        height: 10rem;    
+        color: var(--title-ant-color);
+        font-family:'Courier New', Courier, monospace ;  
+        font-size: 2rem; 
+        
+    }
+    
+    .confirm-delete fieldset {
+        width: 80%;
+        border: none;        
+        color: var(--title-ant-color);
+        font-family:'Courier New', Courier, monospace ;  
+        font-size: 2.4rem; 
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #boton-confirmar {
+        width: 16rem;    
+        height: 5rem;
+        border-radius: 1rem;    
+        margin-top: 2rem;
+        font-size: 2.8rem;
+        margin-left: 42rem;
+    }
+    
+    #boton-confirmar:hover {
+        background-color: var(--boton-hover);  
+        color: var(--button-text); 
+      }
+    
+    footer {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        margin-top: 50rem; 
+      }
+      
+      footer span {   
+        color: var(--titulo);
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 2rem;  
+        text-shadow: 0.05rem 0.05rem var(--hover-enlace);
+    }
+
+
+}
