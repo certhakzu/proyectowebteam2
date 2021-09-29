@@ -4,69 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
+    <title>CulonApp Login</title>
+    <link rel="stylesheet" href="/style/login.css">
 </head>
 <body>
-
-    <header style="padding: 10px; text-align:right;">
-        <nav>
-            <a href="../perfil/registro.html">Registrarse</a>
-            <img src="../recursos/imagenes/iconos/Isesion.png" alt="icono inicio de sesion"  width="50" height="50">  
-        </nav>        
-    </header>
-
-    <div style="display: flex; padding: 20px">
-        <div style="width:34%;">
+    <main>
+        <div class="title-container">
+            <span id="title">Culona-App</span>            
         </div>        
-        <div style="width:45%; padding: 20px;">
-               
-            <fieldset align="center"  style="width:60%; height: 103%;">
-                
-                <h2>Iniciar Sesion</h2>
-                <form action="login.html" method="POST" ><br><br>
-                    <label for="user">Usuario:</label>                   
-                    <input type="email" id="email" name="nombre usuario" size="25" placeholder="email" required><br><br>
-                    <label for="password">Contraseña:</label>
-                    <input type="text" name="nombre usuario" size="20" placeholder="password" required><br><br><br>  
-                    <button type="submit" value="Login"  formmethod="post">LOGIN</button>                                
+        <div class="login-form-container">            
+            <form action="login.html" method="POST">
+                <label for="user">
+                    <input type="email" id="email" name="user" placeholder="correo electrónico" required>
+                </label>                   
+                <label for="password">
+                    <input type="password" id="password" name="password" placeholder="contraseña" required>
+                </label>                      
+                <input type="submit" value="Iniciar Sesión" id="submit-button"></input>                                
+            </form>
+            <div>
+                <hr>
+            </div>                             
+            <div class="register-button">
+                <form action="registro.html">
+                    <button onclick="".. >Registrese</button>
                 </form>
-                
-                <section>
-                    <center>
-                        <form action="../perfil/registro.html" style="margin-top: 5%;">
-                            <button onclick="".. style="font-size: 100%;">Crear Cuenta</button><br>
-                        </form>
-                        <br><br><br>  
-                        <form action="../perfil/premium.html" style="margin-top: 5%;">
-                            <button onclick="".. style="font-size: 100%;">PREMIUM</button><br>
-                        </form>
-                    </center>
-                </section>
-                <br><br> 
-                <section>
-                    <center>
-                        <form action="..//perfil/pagos.html" style="margin-top: 5%;">
-                            <button type="submit" formaction="../perfil/adminstracionReservas.html" autofocus style="background-color: #0f68dd; color:azure; right: 37%; position: absolute;">Siguiente</button>
-                        </form>
-                    </center>
-                </section>
-            </fieldset>
+            </div>        
         </div>
-        
-        <div style="width:10%;">
-        </div>
-    </div>
-    
-    <section align="center">
-        <footer>
-            <h3>______________________________</h3>
-            <address>
-                <a href="../index.html">Inicio</a>
-            </address>
-            <address>
-                <a href="../contacto/contacto.html">Contacto</a><br><br>
-            </address>
-        </footer>
-    </section>    
+    </main>    
+    <footer>
+        <nav>
+            <section class="footer-links-container"> 
+                <a href="/index.html">Home</a>
+                <a href="/contacto/">Tratamiento de datos</a>                                  
+                <a href="/contacto/contacto.html">Contacto</a>      
+            </section>
+        </nav>    
+    </footer>
 </body>
 </html>
