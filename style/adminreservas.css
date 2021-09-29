@@ -1,0 +1,533 @@
+:root{
+    --titulo: #4a5868;
+    --enlace: #a4c0e1;
+    --button-login: #0070ba;
+    --button-text: #ffff;
+    --boton-hover: #002f87ea;
+    --border: #9da3a6;
+    --title-ant-color: #50010e;
+ }
+
+
+html {
+    font-size: 62.5%;
+}  
+  
+body{    
+    position: fixed;
+    margin: 0;
+    padding: 0;    
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; 
+}
+
+header {
+    width: 100%;
+    height: 8.5rem;
+    display: grid;
+    grid-template-columns: 60% 40%; 
+}
+  
+header a{
+    display: inline; 
+    text-decoration: none;
+    font-size: 2.5rem;  
+    color: var(--titulo);
+    padding: 2%; 
+  }
+  
+header a:hover{
+    color: var(--hover);
+    cursor: pointer;
+} 
+
+.header-links-container {
+    margin-top: 3rem;
+    margin-left: 1rem;
+    text-align: center;
+}
+
+
+.header-buttons-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 85%;
+    height: 5rem;
+    text-align: right;
+    margin-top: 1.5rem;  
+}
+
+#login {
+    width: 80%;
+    height: 88%;
+    font-size: 1.4rem;
+    letter-spacing: 0.06em;     
+    background-color: var(--button-login);
+    color: var(--button-text);
+    border-radius: 0.5rem;   
+    border: none;  
+    box-shadow: 3px 3px 3px var(--titulo);  
+}
+  
+#register {
+    width: 80%;
+    height: 85%;
+    font-size: 1.5rem; 
+    letter-spacing: 0.03rem;  
+    border: none;
+    background-color:var(--button-text);
+    color: var(--button-login);  
+    box-shadow: 3px 3px 3px var(--titulo); 
+    border-radius: 0.5rem;   
+    margin-top: 0.5rem;
+}
+  
+#login:hover, #register:hover {
+    background-color: var(--boton-hover);  
+    color: var(--button-text); 
+}  
+ 
+main {
+    width: 100%;
+    height: 60%;
+    display: grid;
+    grid-template-rows: 1fr 1fr; 
+    padding-top: 3.5rem;    
+}
+
+
+.main-links-container {   
+    width: 90%;    
+    height: 10rem;
+    display: inline-block;     
+    grid-row: 1;       
+    background-color: #450a4bcc;
+    text-align: center;
+    padding-top: 0.5rem;    
+}
+
+.main-links-container button{    
+    width: 11rem;    
+    height: 4rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+   
+}
+
+.main-links-container a{    
+    text-decoration: none;
+    color: var(--titulo);   
+    font-size: 1.5rem;
+    text-shadow: 0.1rem 0.1rem var(--hover-enlace);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;     
+    line-height: 1.6rem; 
+}
+
+.main-links-container a:hover {
+    background-color: var(--boton-hover);  
+    color: var(--button-text);
+}
+
+.main-links-container h1 {
+    color: var(--button-text);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.3rem;      
+    text-shadow: 0.04rem 0.04rem var(--hover-enlace); 
+    text-align: left;
+    margin: 0 2rem;
+}
+
+.main-links-container button:hover {
+    background-color: var(--boton-hover);  
+    color: var(--button-text);
+}
+
+.info-reservas-vigentes {
+    width: 80%;
+    height: 14rem;
+    display: grid;    
+    grid-row: 2;
+    grid-template-columns: 40% 60%;    
+}
+
+.no-results-image {
+    display: grid;    
+    grid-column: 1;
+    justify-content: center;
+    margin-left: 5rem;
+    background-image: url('/imagenes/sad.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.redirect-client {
+    display: grid;    
+    grid-column: 2;
+    justify-content: left;
+    margin-left: 0.5rem;
+}
+
+.redirect-client span{   
+    color: var(--title-ant-color);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;  
+    font-size: 2rem;      
+    text-shadow: 0.1rem 0.1rem var(--hover-enlace); 
+    margin-top: 5rem;
+ 
+}
+
+.redirect-client p{
+    font-size: 1.5rem; 
+    color: var(--titulo);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0.1rem 0.1rem var(--hover-enlace);
+    margin-top: 0;
+}
+
+#redirect-client{
+    width: 20rem;    
+    height: 4.5rem;
+    border-radius: 10rem;    
+    margin-top: 3rem;
+    margin-left: 10rem;
+    font-size: 2rem;
+    background-color: var(--button-text);
+    color: var(--boton-hover);
+    box-shadow: 3px 3px 3px var(--titulo);   
+}
+
+#redirect-client:hover {
+    background-color: var(--boton-hover);  
+    color: var(--button-text); 
+}
+
+footer {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-top: 15rem; 
+}
+  
+  footer span {   
+    color: var(--titulo);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;  
+    text-shadow: 0.05rem 0.05rem var(--hover-enlace);
+}
+
+
+@media (min-width: 600px) {
+    header a{
+        font-size: 3rem;  
+        color: var(--titulo);
+        padding: 6%; 
+      }
+      
+    header a:hover{
+        color: var(--hover);
+        cursor: pointer;
+    } 
+    
+    .header-links-container {
+        margin-top: 4rem;
+        margin-left: 1rem;
+        text-align: center;
+    }
+    
+    
+    .header-buttons-container {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        width: 85%;
+        height: 7rem;
+        text-align: right;
+        margin-top: 2rem;  
+    }
+    
+    #login {
+        width: 70%;
+        height: 88%;
+        font-size: 1.9rem;
+        letter-spacing: 0.06em;
+    }
+      
+    #register {
+        width: 70%;
+        height: 85%;
+        font-size: 2.2rem; 
+        letter-spacing: 0.05rem;
+    }
+      
+    #login:hover, #register:hover {
+        background-color: var(--boton-hover);  
+        color: var(--button-text); 
+    }  
+     
+    main {
+        width: 100%;
+        height: 50%;
+        display: grid;
+        grid-template-rows: 1fr 1fr; 
+        padding-top: 5rem;    
+    }
+    
+    
+    .main-links-container {   
+        width: 100%;    
+        height: 12rem;   
+    }
+    
+    
+    .main-links-container h1 {
+        font-size: 2.8rem;
+        padding-left: 7rem;
+    }
+    
+   
+    
+    .main-links-container button{    
+        width: 15rem;    
+        height: 6rem;
+        border-radius: 1rem;
+        margin-top: 1rem;
+        text-align: center;
+
+    } 
+    
+    .main-links-container a{    
+        text-decoration: none;
+        color: var(--titulo);   
+        font-size: 2rem;
+        text-shadow: 0.1rem 0.1rem var(--hover-enlace);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;     
+        line-height: 1.6rem; 
+    }    
+ 
+    
+    .info-reservas-vigentes {
+        width: 80%;
+        height: 30rem; 
+        margin-top: 10rem;
+        margin-left: auto; 
+        margin-right: auto;   
+    }
+    
+    .no-results-image {        
+        background-size:contain ;       
+    }    
+ 
+    .redirect-client span{   
+        font-size: 3.5rem;      
+        margin-top: 10rem;
+        
+    }
+    
+    .redirect-client p{
+        font-size: 2.5rem; 
+        color: var(--titulo);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-shadow: 0.1rem 0.1rem var(--hover-enlace);
+        margin-top: 1px;     
+    }
+    
+    #redirect-client{
+        width: 25rem;    
+        height: 7rem;
+        border-radius: 10rem;    
+        margin-top: 5rem;
+        margin-left: 25rem;
+        font-size: 3rem;  
+    }
+    
+    #redirect button:hover {
+        background-color: var(--boton-hover);  
+        color: var(--button-text); 
+    }
+    
+    footer {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        margin-top: 29rem; 
+    }
+      
+      footer span {   
+        color: var(--titulo);
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.8rem;  
+        text-shadow: 0.05rem 0.05rem var(--hover-enlace);
+    }
+}
+
+
+
+@media (min-width: 800px) {
+    body {
+        position:relative ;
+        box-sizing: border-box;
+        width: 100rem;
+        height: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        
+      }
+    header a{
+        font-size: 3.5rem;  
+        color: var(--titulo);
+        padding: 6%; 
+      }
+      
+    header a:hover{
+        color: var(--hover);
+        cursor: pointer;
+    } 
+    
+    .header-links-container {      
+        height: 12rem;
+        margin-top: 6rem;        
+        text-align: center;
+    }    
+    
+    .header-buttons-container {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        width: 90%;
+        height: 9rem;
+        text-align: right;
+        margin-top: 3rem;  
+    }
+    
+    #login {
+        width: 70%;
+        height: 88%;
+        font-size: 2.4rem;
+        letter-spacing: 0.08em;
+    }
+      
+    #register {
+        width: 70%;
+        height: 85%;
+        font-size: 2.6rem; 
+        letter-spacing: 0.08rem;
+    }
+      
+    #login:hover, #register:hover {
+        background-color: var(--boton-hover);  
+        color: var(--button-text); 
+    }  
+     
+    main {
+        width: 100%;
+        height: 20%;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        margin-top: 8rem;        
+    }    
+    
+    .main-links-container {   
+        width: 100%;    
+        height: 12rem; 
+        background-color: none;  
+    } 
+    
+    .main-links-container a{
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+    
+    .main-links-container h1 {
+        font-size: 3.5rem;
+        padding-left: 6rem;        
+    }
+    
+      
+    .main-links-container button{    
+        width: 20rem;    
+        height: 6rem;
+        border-radius: 1rem;
+        margin-top: 0;
+        margin-left: 5rem;
+
+    }
+      
+    .main-links-container button:hover {
+        background-color: var(--boton-hover);  
+        color: var(--button-text); 
+    }
+    
+    .info-reservas-vigentes {
+        width: 80%;
+        height: 10rem; 
+        
+        margin-left: auto; 
+        margin-right: auto;   
+    }
+    
+    .no-results-image {
+        width: 55%;   
+        height: 100%;         
+        margin-left: 8rem;
+        background-size: cover;
+              
+    }    
+ 
+    .redirect-client span{   
+        font-size: 5rem;      
+        margin-top: 4rem;
+    }
+    
+    .redirect-client p{
+        font-size: 3rem; 
+        color: var(--titulo);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-shadow: 0.1rem 0.1rem var(--hover-enlace);
+      
+    }
+    
+    #redirect-client{
+        width: 30rem;    
+        height: 8rem;
+        border-radius: 10rem;    
+        margin-top: 5rem;
+        margin-left: 20rem;
+        font-size: 3.5rem;  
+    }
+    
+    #redirect button:hover {
+        background-color: var(--boton-hover);  
+        color: var(--button-text); 
+    }
+    
+    footer {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        margin-top: 80rem;
+        margin-bottom: 5rem;
+ 
+    }
+      
+      footer span {   
+        color: var(--titulo);
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 2.4rem;  
+        text-shadow: 0.05rem 0.05rem var(--hover-enlace);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+

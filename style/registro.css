@@ -1,0 +1,491 @@
+:root{
+    --titulo: #4a5868;
+    --enlace: #a4c0e1;
+    --button-login: #0070ba;
+    --button-text: #ffff;
+    --boton-hover: #002f87ea;
+    --border: #9da3a6;
+    --title-ant-color: #50010e;
+ }
+  
+  
+html {
+    font-size: 62.5%;
+}  
+  
+body{    
+    position: fixed;
+    margin: 0;
+    padding: 0;    
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; 
+}
+main {
+    width: 90%;
+    height: 70%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding-top: 6rem;
+    margin: auto;
+}
+
+.title-container{
+    display: grid;
+    grid-row: 1;
+    border-top: 3rem;
+}
+
+#title {
+    text-align: center;
+    color: var(--title-ant-color);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;  
+    font-size: 3.2rem;
+    font-style: oblique;
+    letter-spacing: 0.5rem;    
+    text-shadow: 0.1rem 0.1rem var(--hover-enlace);  
+}
+
+
+.register-form-container {
+    display: grid;
+    grid-row: 2;
+    width: 90%;
+    margin-left: auto;     
+    margin-right: auto;
+    margin-top: 4rem; 
+}
+
+.register-form-container span {
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 25rem;  
+    color:var(--titulo);
+    text-shadow: 0.1rem 0.1rem var(--hover-enlace);
+    margin-bottom: 0.8rem;
+    text-align: center;
+}
+
+hr {
+    display: block;
+    width: 80%;    
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 0.1rem;
+    margin-bottom: 3rem;
+}
+
+.register-form-container fieldset{
+    border: none;         
+}
+
+.register-form-container legend {      
+    font-size: 1.2rem; 
+    color: var(--titulo);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0.1rem 0.1rem var(--hover-enlace);
+    margin-bottom: 0.1rem;
+}
+
+input:focus { 
+    outline: none;    
+    box-shadow: 0 0 10px var(--button-login);
+}
+
+#name, #lastname, #date-birth, #phone-number{
+    width: 38%;
+    height: 3.8rem;    
+    border-radius: 0.6rem;
+    border: 0.0625rem solid var(--border);
+    padding-left: 2rem; 
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    margin-right: 0.6rem; 
+}
+
+
+#email, #password {
+    width: 85%;
+    height: 4rem;    
+    border-radius: 0.6rem;
+    border: 0.0625rem solid var(--border);
+    padding-left: 2rem; 
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;    
+}
+
+#data-treatment-approval{
+   text-align: left;
+    padding-top: 1rem;    
+}
+
+.data-treatment-approval fieldset{
+    font-size: 1.2rem; 
+    color: var(--titulo);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0.1rem 0.1rem var(--hover-enlace);    
+}
+
+
+#submit-button{
+    width: 14rem;    
+    height: 4rem;
+    border-radius: 10rem;
+    text-align: center;    
+    float: right;
+    margin-right: 4rem;
+    margin-top: 0.5rem;
+    font-size: 1.6rem;
+    background-color: var(--button-login);
+    color: var(--button-text);
+}
+
+#submit-button:hover{
+    background-color: var(--boton-hover);
+    color: var(--button-text);    
+}
+
+
+footer {
+    width: 100%;
+    margin-top: 10rem;
+    text-align: center;
+}
+
+a{
+    display: inline; 
+    text-decoration: none;
+    font-size: 160%;  
+    color: var(--titulo);
+    padding: 2%; 
+    text-shadow: 0.1rem 0.1rem var(--hover-enlace);    
+}
+  
+a:hover{
+    color: var(--hover);
+    cursor: pointer;
+}
+
+@media (min-width: 600px) {
+
+    main {
+        width: 70%;
+        height: 68%;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;        
+        border-style: solid;
+        border-color: var(--border);
+        margin-top: 8rem;
+        margin-left: auto;
+        margin-right: auto;        
+        border-width: 0.1rem;
+        border-radius: 2rem; 
+    }
+    
+    field
+
+    .title-container{
+        display: grid;
+        grid-row: 1;        
+    }
+    
+    #title {
+        text-align: center;
+        color: var(--title-ant-color);
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;  
+        font-size: 5rem;
+        font-style: oblique;
+        letter-spacing: 0.8rem;    
+        text-shadow: 0.1rem 0.1rem var(--hover-enlace);  
+    }
+    
+    
+    .register-form-container {
+        display: grid;
+        grid-row: 2;
+        width: 100%;
+        margin-left: auto;     
+        margin-right: auto;        
+    }
+    
+    .register-form-container span {
+        font-size: 2rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 25rem;  
+        color:var(--titulo);
+        text-shadow: 0.1rem 0.1rem var(--hover-enlace);
+        margin-bottom: 0.5rem;
+        margin-left: auto;     
+        margin-right: auto;
+    }
+    
+    hr {
+        display: block;
+        width: 80%;    
+        margin-left: auto;
+        margin-right: auto;
+        border-style: inset;
+        border-width: 0.1rem;
+        margin-bottom: 4rem;
+    }
+    
+    .register-form-container fieldset{
+        border: none; 
+        width: 85%;  
+        margin-left: auto;
+        margin-right: auto;      
+    }
+    
+    .register-form-container legend {      
+        font-size: 1.6rem; 
+        color: var(--titulo);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-shadow: 0.1rem 0.1rem var(--hover-enlace);
+        margin-bottom: 0.5rem;
+    }
+    
+    input:focus { 
+        outline: none;    
+        box-shadow: 0 0 10px var(--button-login);
+    }
+    
+    #name, #lastname{
+        width: 40%;
+        height: 3.8rem;    
+        border-radius: 0.6rem;
+        border: 0.0625rem solid var(--border);
+        padding-left: 2rem; 
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+        margin-right: 0.6rem; 
+    }
+    
+    
+    #email, #password{
+        width: 85%;
+        height: 4rem;    
+        border-radius: 0.6rem;
+        border: 0.0625rem solid var(--border);
+        padding-left: 2rem; 
+        margin-bottom: 1rem;
+        font-size: 1.5rem;    
+    }
+      
+    .data-treatment-approval fieldset{
+        width: 100%;
+        font-size: 1.5rem; 
+        color: var(--titulo);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-shadow: 0.1rem 0.1rem var(--hover-enlace);
+        padding: 0;   
+    }
+
+    #data-treatment-approval{
+       text-align: left;
+       padding-top: 2rem; 
+       padding-bottom: 0.5rem;   
+    }    
+       
+    #submit-button{
+        width: 18rem;    
+        height: 5rem;
+        border-radius: 10rem;         
+        float: right;        
+        margin-top: 3rem;
+        font-size: 2rem;
+        background-color: var(--button-login);
+        color: var(--button-text);
+    }
+    
+    #submit-button:hover{
+        background-color: var(--boton-hover);
+        color: var(--button-text);    
+    }
+    
+    
+    footer {
+        width: 90%;
+        padding-top: 9rem;
+        padding-bottom: 5rem;;            
+        margin: auto;
+    }
+    
+    a{
+        display: inline; 
+        text-decoration: none;
+        font-size: 200%;  
+        color: var(--titulo);
+        padding: 2%; 
+        text-shadow: 0.1rem 0.1rem var(--hover-enlace);    
+    }
+      
+    a:hover{
+        color: var(--hover);
+        cursor: pointer;
+    }
+}
+
+
+
+@media (min-width: 800px) {
+    body {
+        position:relative ;
+        box-sizing: border-box;
+        width: 100rem;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;        
+      }
+
+    main {
+        width: 85%;
+        height: 80rem;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin-top: 12rem;        
+    }
+    
+    .title-container{
+        display: grid;
+        grid-row: 1;
+        
+    }
+    
+    #title {
+        text-align: center;
+        color: var(--title-ant-color);
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;  
+        font-size: 5rem;
+        font-style: oblique;
+        letter-spacing: 0.8rem;    
+        text-shadow: 0.1rem 0.1rem var(--hover-enlace);  
+    }
+    
+    
+    .register-form-container {        
+        display: grid;
+        grid-row: 2;
+        width: 70%;        
+        margin-left: auto;     
+        margin-right: auto;
+    }
+    
+    .register-form-container span {        
+        font-size: 2.2rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 25rem;  
+        color:var(--titulo);
+        text-shadow: 0.1rem 0.1rem var(--hover-enlace);
+        margin-bottom: 1rem;
+        margin-left: auto;     
+        margin-right: auto;
+    }
+    
+    hr {
+        display: block;
+        width: 80%;    
+        margin-left: auto;
+        margin-right: auto;
+        border-style: inset;
+        border-width: 0.1rem;
+        margin-bottom: 6rem;
+    }
+    
+    .register-form-container fieldset{
+        border: none; 
+        width: 80%;  
+        margin-left: auto;
+        margin-right: auto; 
+        
+    }
+    
+    .register-form-container legend {      
+        font-size: 1.8rem; 
+        color: var(--titulo);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-shadow: 0.1rem 0.1rem var(--hover-enlace);
+        margin-bottom: 0.5rem;
+    }
+    
+    input:focus { 
+        outline: none;    
+        box-shadow: 0 0 10px var(--button-login);
+    }
+
+    #name, #lastname, #birth, #phone-number{
+        width: 40%;
+        height: 4rem;    
+        border-radius: 0.6rem;
+        border: 0.0625rem solid var(--border);
+        padding-left: 2rem; 
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        margin-right: 0.6rem; 
+    }
+    
+    
+    #email, #password, #date-birth{
+        width: 85%;
+        height: 4rem;    
+        border-radius: 0.6rem;
+        border: 0.0625rem solid var(--border);
+        padding-left: 2rem; 
+        margin-bottom: 1rem;
+        font-size: 1.5rem;    
+    }
+      
+    .data-treatment-approval fieldset{
+        width: 100%;
+        font-size: 1.5rem; 
+        color: var(--titulo);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-shadow: 0.1rem 0.1rem var(--hover-enlace);
+        padding: 0;   
+    }
+
+    #data-treatment-approval{
+       text-align: left;
+       padding-top: 2rem; 
+       padding-bottom: 0.5rem;   
+    }    
+       
+    #submit-button{
+        width: 18rem;    
+        height: 5rem;
+        border-radius: 10rem;         
+        float: right;        
+        margin-top: 3rem;
+        font-size: 2rem;
+        background-color: var(--button-login);
+        color: var(--button-text);
+    }
+    
+    #submit-button:hover{
+        background-color: var(--boton-hover);
+        color: var(--button-text);    
+    }
+    
+    
+    footer {
+        width: 90%;
+        padding-top: 10rem;
+        padding-bottom: 5rem;;            
+        margin: auto;
+    }
+    
+    a{
+        display: inline; 
+        text-decoration: none;
+        font-size: 250%;  
+        color: var(--titulo);
+        padding: 2%; 
+        text-shadow: 0.1rem 0.1rem var(--hover-enlace);    
+    }
+      
+    a:hover{
+        color: var(--hover);
+        cursor: pointer;
+    }
+}

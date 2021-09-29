@@ -2,64 +2,88 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+    <meta name="description" content="Encuentra una habitación de hotel fácil y rápido en la ciudad de Bucaramanga.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CulonApp Home</title>
+    <link rel="stylesheet" href="style/home.css">    
 </head>
 <body>
-
-    <header style="padding: 10px; text-align:right;">
+    <header>
         <nav>
-            <a href="perfil/registro.html" style="margin-right: 1%;">Registrese</a>
-            <a href="perfil/login.html">Iniciar Sesión</a>
-            <img src="recursos/imagenes/iconos/Isesion.png" alt="icono inicio de sesion"  width="50" height="50">  
-        </nav>        
+            <section class="header-links-container"> 
+                <a href="index.html">Home</a>
+                <a href="perfil/adminreservas.html">Reservas</a>                                  
+                <a href="contacto/contacto.html">Contacto</a>      
+            </section>
+        </nav>
+        <section class="header-buttons-container">
+            <form action="perfil/login.html">
+                <button onclick="".. id="login">Iniciar Sesion</button>
+            </form> 
+            <form action="perfil/registro.html">
+                <button onclick="".. id="register">Registrese</button>
+            </form>
+        </section>   
     </header>
+    <main >
+        <div class="home-main-container">
+            <div class="home-upper-container">
+                <div class="title-container">
+                    <span id="title">Culona-App</span> 
+                    <span id="subtitle">Encuentre habitación en la Ciudad Bonita</span>
+                </div>
+                <div >
+                    <section class="search-bar-container">
+                        <form action="buscar/buscar.html">
+                            <label for="barrabuscar">
+                                <input type="search" placeholder="Ingrese palabra clave" id="barrabuscar" name="barrabuscar">                 
+                                <input type="submit" value="Buscar" id="boton-buscar-barra">              
+                            </label>
+                        </form>
+                    </section>
+                </div>
+            </div>         
+            
+            <div class="filters-container">
+                <fieldset>
+                    <form action="buscar/buscar.html">
+                        <label for="fechaingreso"> 
+                            <span id="texto-filtro-fecha-ingreso">Ingreso:</span>
+                            <input type="date" id="fechaingreso" name="fechaingreso">
+                        </label>
+                        <label for="fechasalida"> 
+                            <span id="texto-filtro-fecha-salida">Salida:</span>
+                            <input type="date" id="fechasalida" name="fechasalida">
+                        </label>
+                        <label for="precio">
+                            <span id="texto-filtro-precio">Precio:</span>
+                            <select name="precio" id="precio">Precios disponibles
+                                <option value="">Seleccione</option>
+                                <option value="200000"> menos de 200.000</option>
+                                <option value="400000">201.000 - 400.000</option>
+                                <option value="600000">401.000 - 600.000</option>
+                                <option value="2000000">más de 600.000</option>
+                            </select>                        
+                        </label>
+                        <label for="tipoHabitacion">
+                            <span id="texto-filtro-habitacion">Tipo-hab:</span>
+                            <select name="tipo-habitacion" id="tipo-habitacion">Tipo de Alojamiento
+                                <option value="">Indiferente</option>
+                                <option value="sencilla">Sencilla</option>
+                                <option value="doble">Doble</option>
+                                <option value="acomodacionMultiple">Múltiple</option>
+                            </select>
+                        </label>
+                        <input type="submit" value="Buscar" id="boton-buscar-filtros"></input>                                
+                    </form>   
+                </fieldset>                
+            </div>            
+        </div>
 
-    <br><br>
-
-    <h2 style="text-align: center; font-size: 190%;"><i>CulonApp</i></h2>
-    
-    <br><br>
-    
-    
-        <section>                    
-            <center>
-                <label for="fechaingreso">Fecha de ingreso:</label>            
-                <input type="date" name="fechaingreso" id="fechaingreso" style="margin-right: 3%;">
-                <label for="fechasalida"> Fecha de salida:</label>
-                <input type="date" name="fechasalida" id="fechasalida">
-            </center>            
-        </section>
-        <br><br>
-        <section>
-            <center>                
-                <input type="search" placeholder="Ingrese una palabra clave" style="width: 30%;">
-                <form action="buscar/buscar.html" style="margin-top: 3%;">
-                    <button onclick="".. style="font-size: 100%;">Buscar</button><br>
-                </form>
-            </center>
-        </section>
-        <br><br><br><br><br><br><br><br><br><br>
-
-
-
-        
-
-
-   
-   
-   <section>
-    <footer align="center">
-        <h3>______________________________</h3>
-        <address>
-            <a href="index.html">Inicio</a>
-        </address>
-        <address>
-            <a href="contacto/contacto.html">Contacto</a><br><br>
-        </address>
+    </main>
+    <footer>
+        <span>Copyright(c) ANTEAM 2021 / MisiónTic2022.</span>
     </footer>
-</section>
-
 </body>
 </html>

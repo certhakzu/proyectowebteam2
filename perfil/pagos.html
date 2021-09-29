@@ -4,90 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pagos</title>
+    <title>Area de Pagos</title>
 </head>
+
 <body style="width:95%; padding: 20px;">
+    
     <header style="padding: 10px; text-align:right;">
         <nav>
             <a href="../perfil/login.html">Iniciar Sesión</a>
-            <img src="../recursos/imagenes/iconos/Isesion.png" alt="icono inicio de sesion"  width="50" height="50">  
+            
         </nav>        
     </header>
-
-    <p style="font-size: 180%; text-align:center;"><strong>PAGOS</strong></p>
     
-    <div style="display: flex; padding: 10px; width:95%;">
-        <div style="width:50%; padding: 10px; margin-left: 8%;">
-            <p style="font-size: 160%; margin-bottom: 10%;"><strong> Información Cliente</strong></p>
-            <form action="pagos.html" method="POST" >
-                <div style="display: flex; width: 100%;">                
-                    <div style="width: 45%;">                  
-                        <label for="userName">Nombre:</label>
-                        <input type="text" name="nombreUsuario" size="19" placeholder="Ingrese su nombre" required><br><br>
+    <main>
+        <p style="font-size: 180%; text-align:center;"><strong>PAGOS</strong></p>
+        <div style="display: flex; padding: 10px; width:95%;">
+            <div style="width:50%; padding: 10px; margin-left: 8%;">
+                <p style="font-size: 160%; margin-bottom: 10%;"><strong> Información Cliente</strong></p>
+                <form action="pagos.html" method="POST" >
+                    <div style="display: flex; width: 100%;">                
+                        <div style="width: 40%;">                  
+                            <label for="userName">Nombre:</label>
+                            <input type="text" name="nombreUsuario" size="19" placeholder="Ingrese su nombre" required><br><br>
+                        </div>
+                        <div style="width: 55%;">
+                            <label for="userLastname">Apellido:</label>
+                            <input type="text" name="apellidoUsuario" size="19" placeholder="Ingrese su Apellido" required><br><br>
+                        </div>
                     </div>
-                    <div style="width: 45%;">
-                        <label for="userLastname">Apellido:</label>
-                        <input type="text" name="apellidoUsuario" size="19" placeholder="Ingrese su Apellido" required><br><br>
-                    </div>
-                </div>
-            <label for="user">Correo electrónico</label>                  
-            <input type="email" id="email" name="nombre usuario" size="45" placeholder="email" required><br><br>
-            <label for="user">Direccion</label>                  
-            <input type="text" id="address" name="direccion" size="53" placeholder="Calle .. Carrera .." required><br><br>
-            <nav>
-                <h5 style="margin-bottom: 2%;">¿Acepta el tratamiento de datos personales?</h5>
-                <input type="radio" id="aceptacion" name="tratamientoDatos" value="Si">Si
-                <input type="radio" id="negacion" name="tratamientoDatos" value="No">No<br><br><br>         
-            </nav>
-        </form>     
-
-            
-        </div>
-        <div style="width:48%;">
-            <form action=""></form>
-                <p style="font-size: 160%; margin-bottom: 10%;"><strong>Opciones de Pago</strong></p>
-                <img src="../recursos/imagenes/iconos/pago-seguro-garantizado.png" alt="imagen metodos de pagos online" width="350" height="80" style="margin-bottom: 5%;"><br>
+                <label for="user">Correo electrónico</label>                  
+                <input type="email" id="email" name="nombre usuario" size="45" placeholder="email" required><br><br>
+                <label for="user">Direccion</label>                  
+                <input type="text" id="address" name="direccion" size="53" placeholder="Calle .. Carrera .." required><br><br>
+                <nav>
+                    <h5 style="margin-bottom: 2%;">¿Acepta el tratamiento de datos personales?</h5>
+                    <input type="radio" id="aceptacion" name="tratamientoDatos" value="Si">Si
+                    <input type="radio" id="negacion" name="tratamientoDatos" value="No">No<br><br><br>         
+                </nav>
+            </form>     
     
-                <label for="card">Número Tarjeta:</label>
-                    <input type="text" name="cardnumber" size="30" placeholder="tarjeta crédito / débito" required><br><br>
-                <div style="display: flex; width: 90%;">                
-                    <div style="width: 27%;">
-                        <label for="month">Mes</label>
-                        <input type="text" name="mescaducidad" size="12" placeholder="Mes" required>
+                
+            </div>
+            <div style="width:52%;">
+                <form action=""></form>
+                    <p style="font-size: 160%; margin-bottom: 10%;"><strong>Opciones de Pago</strong></p>
+                    <img src="../recursos/imagenes/iconos/pago-seguro-garantizado.png" alt="imagen metodos de pagos online" width="350" height="80" style="margin-bottom: 5%;"><br>
+        
+                    <label for="card">Número Tarjeta:</label>
+                        <input type="text" name="cardnumber" size="30" placeholder="tarjeta crédito / débito" required><br><br>
+                    <div style="display: flex; width: 90%;">                
+                        <div style="width: 27%;">
+                            <label for="month">Mes</label>
+                            <input type="text" name="mescaducidad" size="12" placeholder="Mes" required>
+                        </div>
+                        <div style="width: 27%;">
+                            <label for="year">Año</label>
+                            <input type="text" name="anocaducidad" size="12" placeholder="Año" required>
+                        </div>
+                        <div style="width: 25%;">
+                            <label for="cvv">Código Seguridad</label>
+                            <input type="text" name="codigoseguridad" size="12" placeholder="cvv" required>
+                        </div>
                     </div>
-                    <div style="width: 27%;">
-                        <label for="year">Año</label>
-                        <input type="text" name="anocaducidad" size="12" placeholder="Año" required>
-                    </div>
-                    <div style="width: 25%;">
-                        <label for="cvv">Código Seguridad</label>
-                        <input type="text" name="codigoseguridad" size="12" placeholder="cvv" required>
-                    </div>
-                </div>
-            </form>    
-             
+                </form>    
+                 
+            </div>
         </div>
-    </div>
-    <section>
-        <p style="margin-bottom: 5%; margin-top: 1%; margin-left: 10%; margin-right: 15%; font-size: 120%;">Al realizar este pago, confirma que ha leído y entendido la Política de privacidad y sus Derechos como consumidor. Ademas, de los Términos y condiciones.</p>
-        <center>
-            <form action="../perfil/adminstracionReservas.html">
-                <button onclick="".. style="font-size: 120%;">PAGAR</button><br>
-            </form>
-        </center>
-    </section>
-    <br><br>
+        <section style="text-align: center;">
+            <span style="margin: 8%;  font-size: 120%;">Al realizar este pago, confirma que ha leído y entendido la Política de privacidad y sus Derechos como consumidor. Ademas, de los Términos y condiciones.</span>
+            <input type="submit" value="Pagar" style="font-size: 1.2em; margin: 3%">        
+        </section>
 
-    <section>
-        <footer align="center">
+    </main>
+
+    <footer>        
+        <nav style="text-align: center;">
             <h3>______________________________</h3>
-            <address>
-                <a href="../index.html">Inicio</a>
-            </address>
-            <address>
-                <a href="../contacto/contacto.html">Contacto</a><br><br>
-            </address>
-        </footer>
-    </section>
+            <a href="../index.html" style="margin-right: 2%;">Inicio</a>
+            <a href="../contacto/contacto.html">Contacto</a>
+        </nav> 
+    </footer>
 </body>
 </html>
