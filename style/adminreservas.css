@@ -158,7 +158,7 @@ main {
     grid-column: 1;
     justify-content: center;
     margin-left: 5rem;
-    background-image: url('/imagenes/sad.png');
+    background-image: url('../imagenes/sad.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
