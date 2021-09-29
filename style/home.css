@@ -594,7 +594,7 @@ footer span {
     display: grid;
     grid-row: 2;         
     margin-left: 1rem;    
-    background-image: url(/imagenes/home.png);  
+    background-image: url('../imagenes/home.png');  
     border-radius: 10px;
     background-position: center;
     background-repeat: no-repeat;
