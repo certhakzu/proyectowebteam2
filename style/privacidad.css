@@ -1,0 +1,423 @@
+:root{
+    --titulo: #4a5868;
+    --enlace: #a4c0e1;
+    --hover-enlace: #384751;
+    --boton-hover: #002f87ea;
+    --button-login: #0070ba;
+    --button-text: #ffff;
+  }
+  
+  html {
+    font-size: 62.5%;     
+  }
+  
+  body{ 
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;  
+  }
+  
+  header {
+    width: 100%;
+    height: 8.5rem;
+    display: grid;
+    grid-template-columns: 60% 40%; 
+  }
+  
+  a{
+    display: inline; 
+    text-decoration: none;
+    font-size: 170%;  
+    color: var(--titulo);
+    padding: 2%; 
+  }
+  
+  a:hover{
+    color: var(--hover);
+    cursor: pointer;
+  }
+  
+  
+  .header-links-container {
+    margin-top: 3rem;
+    margin-left: 1rem;
+    text-align: center;
+  }
+  
+  .header-buttons-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 85%;
+    height: 5rem;
+    text-align: right;
+    margin-top: 1.5rem;  
+  }
+  
+  #login {
+    width: 80%;
+    height: 88%;
+    font-size: 1.4rem;
+    letter-spacing: 0.06em;     
+    background-color: var(--button-login);
+    color: var(--button-text);
+    border-radius: 0.5rem;   
+    border: none;  
+    box-shadow: 3px 3px 3px var(--titulo);  
+  }
+  
+  #register {
+    width: 80%;
+    height: 85%;
+    font-size: 1.5rem; 
+    letter-spacing: 0.03rem;  
+    border: none;
+    background-color:var(--button-text);
+    color: var(--button-login);  
+    box-shadow: 3px 3px 3px var(--titulo); 
+    border-radius: 0.5rem;   
+    margin-top: 0.5rem;
+  }
+  
+  #login:hover, #register:hover {
+    background-color: var(--boton-hover);  
+    color: var(--button-text); 
+  }
+  
+  
+  main {
+    width: 100%;
+    height: 80%;
+  }
+  fieldset {
+      border: none;
+      width: 80%;
+      margin-top: 2rem;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: justify;
+  }
+  
+  #title {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;  
+    font-size: 2rem;  
+    letter-spacing: 0.1rem;
+    color:rgba(0, 0, 0, 0.774);    
+    text-shadow: 0.08rem 0.06rem var(--hover-enlace); 
+    margin-left: 0.8rem;    
+  }
+
+  span {
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 25rem;  
+    color: #17171a;
+    text-shadow: 0.01rem 0.01rem var(--hover-enlace);
+  }
+
+  p  {
+    margin-top: 1.5rem;  
+    font-size: 1.3rem; 
+    color: #58595a;
+    font-family:monospace;
+    text-shadow: 0.01rem 0.01rem var(--hover-enlace);
+    line-height: 130%;  
+  }
+
+  footer {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2.5rem; 
+  }
+
+ 
+ #address {
+    margin-top: 2rem;
+    margin-bottom: 2rem;   
+    font-size: 1.5rem; 
+    color: #58595a;
+    font-family:monospace;
+    text-shadow: 0.01rem 0.01rem var(--hover-enlace);
+    line-height: 120%; 
+}
+
+#info-contacto {     
+    font-size: 1.8rem; 
+    color: #17171a;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0.01rem 0.01rem var(--hover-enlace);    
+}
+ 
+  
+footer span {   
+    color: var(--titulo);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;  
+    text-shadow: 0.05rem 0.05rem var(--hover-enlace);   
+}
+
+ 
+@media (min-width: 600px) {
+    main {
+        width: 95%;
+        height: 98rem;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin-left: auto;  
+        margin-right: auto;      
+    }
+    
+    main fieldset {
+        margin-top: 8%;
+        width: 85%;
+    }
+
+    a{     
+        font-size: 200%;     
+        padding: 4%; 
+      }
+      
+      a:hover{
+        color: var(--hover);
+        cursor: pointer;
+      }
+      
+      
+      .header-links-container {
+        margin-top: 4rem;        
+        margin-left: 1rem;
+        text-align: center;
+      }
+      
+      .header-buttons-container {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        width: 95%;
+        height: 8rem;
+        text-align: right;
+        margin-top: 1.5rem;  
+      }
+      
+      #login {
+        width: 70%;
+        height: 72%;
+        font-size: 1.8rem;
+        letter-spacing: 0.06em;  
+      }
+      
+      #register {
+        width: 70%;
+        height: 70%;
+        font-size: 1.8rem; 
+        letter-spacing: 0.2rem;
+        margin-top: 0.1em;
+      }
+      
+      #login:hover, #register:hover {
+        background-color: var(--boton-hover);  
+        color: var(--button-text); 
+      }     
+      
+
+      
+      #title {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;  
+        font-size: 2rem;  
+        letter-spacing: 0.1rem;
+        color:rgba(0, 0, 0, 0.774);    
+        text-shadow: 0.08rem 0.06rem var(--hover-enlace); 
+        margin-left: 17rem;  
+      }
+    
+      span {
+        font-size: 2rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 25rem;  
+        color: #17171a;
+        text-shadow: 0.01rem 0.01rem var(--hover-enlace);
+      }
+    
+      p  {
+        margin-top: 1.8rem;  
+        font-size: 1.7rem; 
+        color: #58595a;
+        font-family:monospace;
+        text-shadow: 0.01rem 0.01rem var(--hover-enlace);
+        line-height: 130%;  
+      }
+    
+      footer {
+        width: 70%;        
+        text-align: center;
+        margin-top: 3rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2.5rem; 
+      }
+    
+     
+     #address {
+        margin-top: 1rem;
+        margin-bottom: 3rem;   
+        font-size: 2.2rem; 
+        color: #58595a;
+        font-family:monospace;
+        text-shadow: 0.01rem 0.01rem var(--hover-enlace);
+        line-height: 140%; 
+    }
+    
+    #info-contacto {     
+        font-size: 2.4rem;
+        margin-top: 182rem; 
+        color: #17171a;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-shadow: 0.01rem 0.01rem var(--hover-enlace);    
+    }
+     
+      
+    footer span {   
+        color: var(--titulo);
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.8rem;  
+        text-shadow: 0.05rem 0.05rem var(--hover-enlace);   
+    }
+  
+}
+
+
+@media (min-width: 800px) {
+    body {
+        position:relative ;
+        box-sizing: border-box;
+        width: 100rem;
+        height: 80%;
+        margin-left: auto;
+        margin-right: auto;        
+      }
+
+      main {
+        width: 95%;
+        height: 50rem;   
+    }
+    
+    main fieldset {
+        margin-top: 8%;
+        width: 88%;
+    }
+
+    a{     
+        font-size: 250%;     
+        padding: 4%; 
+      }
+      
+      a:hover{
+        color: var(--hover);
+        cursor: pointer;
+      }
+      
+      
+      .header-links-container {
+        margin-top: 6rem;        
+        margin-left: 4rem;
+        text-align: center;
+      }
+      
+      .header-buttons-container {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        width: 95%;
+        height: 8rem;
+        text-align: right;
+        margin-top: 3rem;  
+      }
+      
+      #login {
+        width: 70%;
+        height: 72%;
+        font-size: 2.2rem;
+        letter-spacing: 0.06em;  
+      }
+      
+      #register {
+        width: 70%;
+        height: 70%;
+        font-size: 2.2rem; 
+        letter-spacing: 0.2rem;
+        margin-top: 0.1em;
+      }
+      
+      #login:hover, #register:hover {
+        background-color: var(--boton-hover);  
+        color: var(--button-text); 
+      }     
+      
+
+      
+      #title {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;  
+        font-size: 2.3rem;  
+        letter-spacing: 0.1rem;
+        color:rgba(0, 0, 0, 0.774);    
+        text-shadow: 0.08rem 0.06rem var(--hover-enlace); 
+        margin-left: 28rem;  
+      }
+    
+      span {
+        font-size: 2rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 25rem;  
+        color: #17171a;
+        text-shadow: 0.01rem 0.01rem var(--hover-enlace);
+      }
+    
+      p  {
+        margin-top: 1.8rem;  
+        font-size: 1.7rem; 
+        color: #58595a;
+        font-family:monospace;
+        text-shadow: 0.01rem 0.01rem var(--hover-enlace);
+        line-height: 130%;  
+      }
+    
+      footer {
+        width: 70%;        
+        text-align: center;        
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2.5rem; 
+      }
+    
+     
+     #address {
+        margin-top: 2rem;
+        margin-bottom: 3rem;   
+        font-size: 2rem; 
+        color: #58595a;
+        font-family:monospace;
+        text-shadow: 0.01rem 0.01rem var(--hover-enlace);
+        line-height: 140%; 
+    }
+    
+    #info-contacto {     
+        font-size: 2.3rem;
+        margin-bottom: 0; 
+        color: #17171a;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-shadow: 0.01rem 0.01rem var(--hover-enlace);    
+    }
+     
+      
+    footer span {   
+        color: var(--titulo);
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.8rem;  
+        text-shadow: 0.05rem 0.05rem var(--hover-enlace);   
+    }
+}
+
+
