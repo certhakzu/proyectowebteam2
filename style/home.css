@@ -343,7 +343,7 @@ footer span {
     height: 88%;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    background-image: url('/imagenes/home.png');
+    background-image: url('../imagenes/home.png');
     border-radius: 10px;
     background-position: center;
     background-repeat: no-repeat;
