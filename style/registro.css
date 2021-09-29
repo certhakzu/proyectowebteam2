@@ -25,16 +25,15 @@ body{
 main {
     width: 90%;
     height: 70%;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    display: grid;    
     padding-top: 6rem;
-    margin: auto;
+    
 }
 
 .title-container{
     display: grid;
     grid-row: 1;
-    border-top: 3rem;
+    border-top: 13rem;
 }
 
 #title {

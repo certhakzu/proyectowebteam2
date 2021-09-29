@@ -5,44 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eliminar Cuenta</title>
+    <link rel="stylesheet" href="../style/bajacliente.css">
 </head>
 <body>
-    <header style="padding: 10px; text-align:right;">
+    <header>
         <nav>
-            <a href="/perfil/registro.html" style="margin-right: 1%;">Registrese</a>
-            <a href="/perfil/login.html">Iniciar Sesión</a>
-        </nav>        
-    </header> 
-    <main>
-        <h2>Eliminar Cuenta</h2>
-
-        <label for="retroalimentacion">
-            <p><textarea name="retroalimentacion" rows="5" cols="50" autofocus>Cuéntanos porque has decidido abandonar nuestra plataforma: </textarea></p>
-            <input type="submit" value="Enviar">
-        </label>
-        <br>
-
-        <label for="decisioneliminarcuenta">
-            <span>¿Esta seguro que desea eliminar su cuenta?</span>     
-            <input type="radio" name="decisioneliminarcuenta" id="decisioneliminarcuenta" value="S">Si            
-            <input type="radio" name="decisioneliminarcuenta" id="decisioneliminarcuenta" value="N">No
-        </label>
-        <section>
-            <form action="">
-                <button onclick="".. >Eliminar Cuenta</button><br>
+            <section class="header-links-container"> 
+                <a href="../index.html">Home</a>
+                <a href="../perfil/adminreservas.html">Reservas</a>                                  
+                <a href="../contacto/contacto.html">Contacto</a>      
+            </section>
+        </nav>
+        <section class="header-buttons-container">
+            <form action="../perfil/login.html">
+                <button onclick="".. id="login">Iniciar Sesion</button>
+            </form> 
+            <form action="../perfil/registro.html">
+                <button onclick="".. id="register">Registrese</button>
             </form>
-            <span>Gracias por haber utilizado nuestros servicios!</span>      
-        </section>
-    </main>
-
-    <footer>        
-        <nav >
-            <h3>______________________________</h3>
-            <a href="../index.html" >Inicio</a>
-            <a href="../contacto/contacto.html">Contacto</a>
-        </nav> 
-    </footer>
-
+        </section>   
+    </header>
     
+    <main>
+        <span>Eliminar Cuenta</span>
+        <div class="text-box">            
+            <label for="retroalimentacion">
+                <p><textarea id="text-box" name="retroalimentacion" autofocus>Cuéntanos porque has decidido abandonar nuestra plataforma:</textarea></p>
+                <input type="submit" id="button-text-box" value="Enviar">
+            </label>
+        </div>
+        <div class="confirm-delete">
+            <form action="../index.html">
+                <fieldset>
+                    <label for="decision-eliminar-cuenta">
+                        <legend>¿Esta seguro que desea eliminar su cuenta?</legend>     
+                        <input type="radio" name="decisioneliminarcuenta" id="decisioneliminarcuenta" value="S">Si            
+                        <input type="radio" name="decisioneliminarcuenta" id="decisioneliminarcuenta" value="N">No            
+                    </label>
+                </fieldset>    
+                <input type="submit" id="boton-confirmar" value="Confirmar">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <span>Copyright(c) ANTEAM 2021 / MisiónTic2022.</span>
+    </footer>    
 </body>
 </html>
