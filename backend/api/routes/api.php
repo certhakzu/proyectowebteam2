@@ -16,9 +16,15 @@ use App\Http\Controllers\HabitacionController;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-Route::get('/cliente',[ClienteController::class,'showAll']);
-Route::post('/cliente/signup',[ClienteController::class,'signup']);//Agregar registro
-Route::post('/cliente/login',[ClienteController::class],'login');
+Route::get('/cliente',[ClienteController::class,'showAll']);//Listo
+Route::post('/cliente/signup',[ClienteController::class,'signup']);//Listo
+Route::post('/cliente/login',[ClienteController::class,'login']);//Listo
+Route::post('/cliente/update',[ClienteController::class,'update']);
+Route::post('/cliente/search',[ClienteController::class,'search']);
+
+//Route::resource('cliente','ClienteController');
+
+Route::get('/cliente/find',[ClienteController::class,'find']);
 /*Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });*/
