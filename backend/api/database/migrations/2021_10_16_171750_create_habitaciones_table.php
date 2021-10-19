@@ -10,10 +10,8 @@ class CreateHabitacionesTable extends Migration
     {
         Schema::create('habitaciones', function (Blueprint $table) {
             $table->id();
-
-            $table->foreignId('hotel_id');
+            $table->foreignId('hotel_id');            
             $table->foreignId('tipo_id');
-
             $table->tinyInteger('piso');
             $table->tinyInteger('numero');
             $table->bigInteger('precio');
@@ -24,7 +22,6 @@ class CreateHabitacionesTable extends Migration
             $table->foreign('tipo_id')->references('id')->on('tipo_habitaciones');
         });
     }
-
 
     public function down()
     {
