@@ -1,0 +1,19 @@
+<div class="d-flex justify-content-center align-items-center h-100" [formGroup]="form">
+    <div class="card col-4 p-5">
+        <div>
+            <p class="fs-2 fw-bold text-center">Iniciar sesión</p>
+        </div>
+        <div class="mb-4">
+            <label for="email" class="fw-bold">Correo:</label>
+            <input type="text" name="email" class="form-control" id="email" placeholder="ejemplo@email.com" form-Control-Name="correo">
+        </div>
+        <div class="mb-4">
+            <label for="doc" class="fw-bold">Contraseña:</label>
+            <input type="password" name="password" class="form-control" id="password" placeholder="**********" form-Control-Name="clave">
+        </div>
+        <div class="text-center">
+            <button class="btn btn-primary" (click)="login()">Ingresar</button><hr>
+            <button class="btn btn-primary" (click)="signup()">Registrarme</button>
+        </div>
+    </div>
+</div> 

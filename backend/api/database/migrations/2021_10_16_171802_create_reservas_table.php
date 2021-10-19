@@ -10,8 +10,7 @@ class CreateReservasTable extends Migration
     {
         Schema::create('reservas', function (Blueprint $table) {
             $table->id();
-            $table->string('doc_cliente',10);
-            
+            $table->string('doc_cliente',10);            
             $table->foreignId('habitacion_id');
             $table->date('fecha_inicio');
             $table->date('fecha_fin');
